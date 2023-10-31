@@ -6,7 +6,7 @@ import time
     wlan = WLAN(STA_IF)
     wlan.active(True)
 
-wlan.connect('POT_MQTT', '1104Maritime')
+wlan.connect('POT_MQTT', 'password')
 
 tries = 0
 while not wlan.isconnected() and tries < 10:
